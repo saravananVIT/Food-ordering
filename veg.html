@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <title>Vegetarian</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .in{
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+            background-color: white;
+            padding: 5px;
+            column-gap :50px;
+            row-gap :50px;
+        }
+        a{
+            text-decoration: none;
+        }
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+          
+          .topnav {
+            overflow: hidden;
+            background-color: #333;
+          }
+          
+          .topnav a {
+            float: left;
+            display: block;
+            color: #080808;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+          }
+          
+          .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+          }
+          
+          .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+          }
+          
+          .topnav .icon {
+            display: none;
+          }
+          
+          @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+              float: right;
+              display: block;
+            }
+          }
+          
+          @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+              position: absolute;
+              right: 0;
+              top: 0;
+            }
+            .topnav.responsive a {
+              float: none;
+              display: block;
+              text-align: left;
+            }
+          }
+    </style>
+    </head>
+<body>
+    <center>
+
+        <div class="topnav" id="myTopnav" style="background-color:white">
+            <a href="http://127.0.0.1:5000/starter">Starter</a>
+            <a href="">Vegetarian</a>
+            <a href="http://127.0.0.1:5000/non">Non-Veg</a>
+            <a href="http://127.0.0.1:5000/dest">Desserts</a>
+            <a href="carts">Add to card</a>
+            <!-- <a href="http://127.0.0.1:5000/pay">Payment</a> -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <h1>Vegetarian Menu</h1>
+    
+    <div class="container">
+        <div class="row">
+          <form action="add1" method="post">
+            <div class="col-sm-4">
+                <a href=""><img src="https://wynfluenzfoundation.com/wp-content/uploads/2021/11/mini-meals.jpg" width="150" height="170" ><br>Mini Meals<br>RS :95.00</a>
+                <div class=”counter”>
+                  <input type="number" name="quantity" style="width: 40px;" value="1">
+                  <button type="submit" class="btn btn-primary" value="https://wynfluenzfoundation.com/wp-content/uploads/2021/11/mini-meals.jpg Mini_Meals 95" name="food">Add To Cart</button>
+
+                  </div>
+              </div>
+            </form>
+              <form action="add1" method="post">
+            <div class="col-sm-4">
+                <a href=""><img src="https://imgmedia.lbb.in/media/2019/09/5d7325c706af943d00891bb5_1567827399037.jpg" width="150" height="170"><br>Spl_meals<br>RS :250.00</a>
+                <div class=”counter”>
+                  <input type="number" name="quantity" style="width: 40px;" value="1">
+                  <button type="submit" class="btn btn-primary" value="https://imgmedia.lbb.in/media/2019/09/5d7325c706af943d00891bb5_1567827399037.jpg Spl_meals 250" name="food">Add To Cart</button>
+
+                  </div>
+            </div>
+          </form>
+            <form action="add1" method="post">
+            <div class="col-sm-4">
+                <a href=""><img src="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sandhya-archanaskitchen.com/Chettinad_Vegetable_Biryani_Recipe.jpg" width="150" height="170"><br>Veg_Briyani<br>RS :175.00</a>
+                <div class=”counter”>
+                  <input type="number" name="quantity" style="width: 40px;" value="1">
+                  <button type="submit" class="btn btn-primary" value="https://www.archanaskitchen.com/images/archanaskitchen/1-Author/sandhya-archanaskitchen.com/Chettinad_Vegetable_Biryani_Recipe.jpg Veg_Briyani 175" name="food">Add To Cart</button>
+
+                  </div>
+            </div>
+        </div>
+    </div>
+  </form>
+    <div class="container">
+        <div class="row">
+          <form action="add1" method="post">
+            <div class="col-sm-4">
+                <a href=""><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFTom1LtWBjI_ocDQPujzmLtPhRwk3eSoKtDmgjE26jRVy13D7csNuZCyuqgozuwuMyGi8Ug00EUSQj4yLd1cR9r5zyikRtFC2UaCtkCIUBZyenmBfMNWVAKM6Pk4gRrKLlQjam9hqiYQ4N8swd0C52r5_DeNXcNJ8X9iIYAZw6I2_rrI-DFKJ8HM5/s800/1-MINI-TIFFIN.png" width="150" height="170"><br>Mini_Tiffin<br>RS :142.00</a>
+                <div class=”counter”>
+                  <input type="number" name="quantity" style="width: 40px;" value="1">
+                  <button type="submit" class="btn btn-primary" value="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFTom1LtWBjI_ocDQPujzmLtPhRwk3eSoKtDmgjE26jRVy13D7csNuZCyuqgozuwuMyGi8Ug00EUSQj4yLd1cR9r5zyikRtFC2UaCtkCIUBZyenmBfMNWVAKM6Pk4gRrKLlQjam9hqiYQ4N8swd0C52r5_DeNXcNJ8X9iIYAZw6I2_rrI-DFKJ8HM5/s800/1-MINI-TIFFIN.png Mini_Tiffin 142" name="food">Add To Cart</button>
+
+                  </div>
+            </div>
+          </form>
+            <form action="add1" method="post">
+            <div class="col-sm-4">
+                <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Curd_Rice.jpg" width="150" height="170"><br>Curd_Rice<br><label>RS :50.00</label></a>
+                <div class=”counter”>
+                  <input type="number" name="quantity" style="width: 40px;" value="1">
+                  <button type="submit" class="btn btn-primary" value="https://upload.wikimedia.org/wikipedia/commons/5/58/Curd_Rice.jpg Curd_Rice 50" name="food">Add To Cart</button>
+
+                  </div>
+              </div>
+            </form>
+              <form action="add1" method="post">
+            <div class="col-sm-4">
+              <a href=""><img src="https://thechutneylife.com/wp-content/uploads/2017/09/Veg-Hakka-Noodles-The-Chutney-Life-4.jpg" width="150" height="170"><br>Veg Noodles<br><label>RS :160.00</label></a>
+              <div class=”counter”>
+                <input type="number" name="quantity" style="width: 40px;" value="1">
+                <button type="submit" class="btn btn-primary" value="https://thechutneylife.com/wp-content/uploads/2017/09/Veg-Hakka-Noodles-The-Chutney-Life-4.jpg Veg_Noodles 160" name="food">Add To Cart</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </form>
+    <div class="container">
+      <div class="row">
+        <form action="add1" method="post">
+          <div class="col-sm-4">
+              <a href=""><img src="https://i0.wp.com/kalimirchbysmita.com/wp-content/uploads/2015/03/Thumbnail1.jpg" width="150" height="170"><br>Paneer Rice<br>RS :130.00</a>
+              <div class=”counter”>
+                <input type="number" name="quantity" style="width: 40px;" value="1">
+                <button type="submit" class="btn btn-primary" value="https://i0.wp.com/kalimirchbysmita.com/wp-content/uploads/2015/03/Thumbnail1.jpg Paneer_Rice 130" name="food">Add To Cart</button>
+
+                </div>
+          </div>
+        </form>
+        <form action="add1" method="post">
+          <div class="col-sm-4">
+            
+              <a href=""><img src="https://thumbs.dreamstime.com/b/indian-chicken-curry-rice-naan-17902486.jpg" width="150" height="170"><br>Naan + Paneer Gravy<br><label>RS :125.00</label></a>
+              <div class=”counter”>
+                <input type="number" name="quantity" style="width: 40px;" value="1">
+                <button type="submit" class="btn btn-primary" value="https://thumbs.dreamstime.com/b/indian-chicken-curry-rice-naan-17902486.jpg Naan+Paneer_Gravy 125" name="food">Add To Cart</button>
+
+                </div>
+            </div>
+          </form>
+            <form action="add1" method="post">
+          <div class="col-sm-4">
+            <a href=""><img src="https://4.bp.blogspot.com/-veSZXssN7TU/WceeZijN96I/AAAAAAAAbKg/5MOvKLRwUbMvHgPFf368aSuAcdI4ejY8gCEwYBhgL/s1600/9152.jpg" width="150" height="170"><br>Gobi Fried Rice<br><label>RS :150.00</label></a>
+            <div class=”counter”>
+              <input type="number" name="quantity" style="width: 40px;" value="1">
+              <button type="submit" class="btn btn-primary" value="https://4.bp.blogspot.com/-veSZXssN7TU/WceeZijN96I/AAAAAAAAbKg/5MOvKLRwUbMvHgPFf368aSuAcdI4ejY8gCEwYBhgL/s1600/9152.jpg Gobi_Fried_Rice 150" name="food">Add To Cart</button>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</form>
+</center>
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+</body>
+</html>
